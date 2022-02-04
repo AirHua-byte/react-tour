@@ -10,6 +10,7 @@
   "dependencies": {
     "@commitlint/config-conventional": "^16.0.0",
     "commitlint": "^16.1.0",
+    "prop-types": "^15.8.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -21,11 +22,16 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "husky": "^0.14.3",
+    "husky": "^7.0.4",
     "lint-staged": "^7.2.2",
     "react-test-renderer": "^16.7.0",
     "umi": "^2.7.7",
     "umi-plugin-react": "^1.8.4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "lint-staged": {
     "*.{js,jsx}": [
