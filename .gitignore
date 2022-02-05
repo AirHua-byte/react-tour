@@ -16,3 +16,6 @@
 # umi
 .umi
 .umi-production
+
+commitlint.config.js
+.cz-config.js
